@@ -12,10 +12,6 @@ cd Django_library_app
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-set DB_HOST=<your db hostname>
-set DB_NAME=<your db name>
-set DB_USER=<your db username>
-set DB_PASSWORD=<your db user password>
 set SECRET_KEY=<your secret key>
 python3 manage.py makemigrations
 python3 manage.py migrate
@@ -34,5 +30,46 @@ python3 manage.py migrate
 - **Backend**: Python, Django Rest Framework
 - **Database**: SQLite
 
-# Django_library_app
-# Django_library_app
+├── borrowing
+│   └──  tests
+│        └── __init__.py
+│        └── test_borrowing_api.py
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── serializers.py
+│   ├── urls.py
+│   └── views.py
+├── library
+│   └──  tests
+│        └── __init__.py
+│        └── test_library_api.py
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── permissions.py
+│   ├── serializers.py
+│   ├── urls.py
+│   └── views.py
+├── library_service
+    ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── user
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── serializers.py
+│   ├── urls.py
+│   └── views.py
+├── .env
+├── .gitignore
+├── .flake8
+├── manage.py
+├── README.md
+├── requirements.txt
