@@ -30,6 +30,8 @@ python3 manage.py migrate
 - **Backend**: Python, Django Rest Framework
 - **Database**: SQLite
 
+```text
+Django_library_app/
 ├── borrowing
 │   └──  tests
 │        └── __init__.py
@@ -76,3 +78,4 @@ python3 manage.py migrate
 ├── manage.py
 ├── README.md
 ├── requirements.txt
+```
