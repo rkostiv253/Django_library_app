@@ -54,7 +54,7 @@ python3 manage.py migrate
 │   ├── urls.py
 │   └── views.py
 ├── library_service
-    ├── __init__.py
+│   ├── __init__.py
 │   ├── asgi.py
 │   ├── settings.py
 │   ├── urls.py
@@ -67,8 +67,11 @@ python3 manage.py migrate
 │   ├── serializers.py
 │   ├── urls.py
 │   └── views.py
-├── .env
+├── .dockerignore
+├── .env.sample
 ├── .gitignore
+├── docker-compose.yaml
+├── Dockerfile
 ├── .flake8
 ├── manage.py
 ├── README.md
